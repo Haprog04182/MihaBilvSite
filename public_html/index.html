@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Подключаем слайдер свайпер -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" defer>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" defer>
+	<link rel="stylesheet" href="assets/css/style.css" defer>
+	<title>Black Art</title>
+</head>
+<body>
+<section class="panel" id="first-page">
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<a href="#first-page" class="header__logo">
+					<img src="assets/img/logo.jpg" alt="">
+				</a>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li>
+							<a href="#first-page" class="header__link">Главное</a>
+						</li>
+						<li>
+							<a href="#about-us" class="header__link">О себе</a>
+						</li>
+						<li>
+							<a href="#myrabota" class="header__link">Мои работы</a>
+						</li>
+						<li>
+							<a href="#catalog" class="header__link">Каталог</a>
+						</li>
+						<li>
+							<a href="#podpiska" class="header__link">Подписка</a>
+						</li>
+						<li>
+							<a href="#sub" class="header__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="container d-flex flex-column align-items-center justify-content-center content" style="margin-top:75px;">
+		<h1 class="site-name text-upper" style="margin-top:40px;">Black Art</h1>
+		<p class="text-upper text-center mt-3">Интернет-магазин чёрного искусства,<br>работы по вашему желанию от известной</br>художници</p>
+		<a href="Параллакс для сайта/public_html/index.html" class="wave-btn">
+			<span class="wave-btn__text">Have a rest</span>
+			<span class="wave-btn__waves"></span>
+		</a>
+	</div>
+</section>
+<section class="panel" id="about-us">
+	<div class="container d-flex h-100 flex-column align-items-center justify-content-center">
+		<h1 class="section-title text-upper" style="color:#fff;">о себе</h1>
+		<p class="text-upper text-center mt-5">В Моём интернет-магазине представлен большой выбор работ.<br>Все товары, представленные на нашем сайте, выполнены лучшим специалистом - мной</br> А если хотите узнать мою тайну, а так же о моём таланте <br>нажмите на кнопку</br></p>
+		<a href="public_html/index.html" class="wave-btn">
+			<span class="wave-btn__text">Легенда</span>
+			<span class="wave-btn__waves"></span>
+		</a>
+	</div>
+</section>
+<section class="panel"id="myrabota">
+	<h1 class="section-title text-upper">Мои работы</h1>
+	<!-- Слайдер -->
+	<div class="image-slider swiper-container">
+		<div class="image-slider__wrapper swiper-wrapper">
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/01.jpg" alt="Картинка">
+				</div>
+			</div>
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/02.jpg" alt="Картинка">
+				</div>
+			</div>
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/03.jpg" alt="Картинка">
+				</div>
+			</div>
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/04.jpg" alt="Картинка">
+				</div>
+			</div>
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/05.jpg" alt="Картинка">
+				</div>
+			</div>
+			<div class="image-slider__slide swiper-slide">
+				<div class="image-slider__image">
+					<img src="assets/img/06.jpg" alt="Картинка">
+				</div>
+			</div>
+		</div>
+		<!-- Добавляем если нам нужны стрелки управления -->
+		<!-- <div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> -->
+		<!-- Добавляем если нам нужна пагинация -->
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+<section class="panel" id="catalog">
+	<h1 class="section-title text-upper">каталог</h1>
+	<input type="radio" id="giroscooters" name="categories" value="giroscooters">
+	<input type="radio" id="electric_scooters" checked name="categories" value="electric_scooters">
+	<input type="radio" id="segways" name="categories" value="segways">
+	<input type="radio" id="all_items" name="categories" value="all_items">
+	<div class="categories">
+		<form id="catalog_filter">
+			<ul id="categories-container">
+				<li>
+					<label for="giroscooters" id="giroscooters-tab" class="text-upper">Портреты</label>
+				</li>
+				<li>
+					<label for="electric_scooters" id="electric_scooters-tab" class="text-upper">Природа</label>
+				</li>
+				<li>
+					<label for="segways" id="segways-tab" class="text-upper">Абстракционизм</label>
+				</li>
+				<li>
+					<label for="all_items" id="all_items-tab" class="text-upper">Все</label>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<div class="panels">
+		<div id="giroscooters-container" class="justify-content-between flex-wrap catalog-container">
+			<div class="c-card">
+				<img src="assets/img/catalog/giroscooters/1.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">профессиональный «Реализм» </h4>
+					<p class="type"><span>Вид:</span>Портрет</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">25 000<span>p.</span></p>
+						<button class="btn btn-primary" href="#popup_2">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/giroscooters/2.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">Стандартный</h4>
+					<p class="type"><span>Вид:</span>Портрет</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">10 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/giroscooters/3.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">«Парковая работа»</h4>
+					<p class="type"><span>Вид:</span>Портрет</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">5 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panels">
+		<div id="electric_scooters-container" class="justify-content-between flex-wrap catalog-container">
+			<div class="c-card">
+				<img src="assets/img/catalog/electric_scooters/1.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">Природа</h4>
+					<p class="type"><span>Вид:</span>Природа</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">2 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/electric_scooters/2.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">Космические работы аэрозольной краской</h4>
+					<p class="type"><span>Вид:</span>Природа</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">7 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/electric_scooters/3.gif" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">Анимированные работы</h4>
+					<p class="type"><span>Вид:</span>Природа</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">10 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panels">
+		<div id="segways-container" class="justify-content-between flex-wrap catalog-container">
+			<div class="c-card">
+				<img src="assets/img/catalog/segways/1.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">«Жизненный путь душ»</h4>
+					<p class="type"><span>Вид:</span>Абстракционизм</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">10 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/segways/2.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">«На глади вод отражается война»</h4>
+					<p class="type"><span>Вид:</span>Абстракционизм</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">40 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+			<div class="c-card">
+				<img src="assets/img/catalog/segways/3.png" alt="card-image">
+				<div class="card-body">
+					<h4 class="text-upper text-center" style="color:#898F99;">работы с использованием эпоксидной смолы</h4>
+					<p class="type"><span>Вид:</span>Абстракционизм</p>
+					<div class="price-container d-flex justify-content-between align-items-center">
+						<p class="price">15 000<span>p.</span></p>
+						<button class="btn btn-primary">Приобрести</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="panel" id="podpiska">
+	<div class="form">
+		<form action="#" id="form" class="form__body">
+			<h1 class="form__title"> Отправка данных на почту </h1>
+			<div class="form__item">
+				<label for="formName" class="form__label"> Имя*: </label>
+				<input id="formName" type="text" name="name" class="form__input _req">
+			</div>
+			<div class="form__item">
+				<label for="formEmail" class="form__label"> E-mail*: </label>
+				<input id="formEmail" type="text" name="email" class="form__input _req _email">
+			</div>
+			<div class="form__item">
+				<div class="form__label"> Вертикальная или горизонтальная? </div>
+				<div class="options">
+					<div class="options__item">
+						<input id="formRightHanded" checked type="radio" value="right" name="hand" class="options__input">
+						<label for="formRightHanded" class="options__label"><span> Вертикальная </span></label>
+					</div>
+					<div class="options__item">
+						<input id="formLeftHanded" type="radio" value="left" name="hand" class="options__input">
+						<label for="formLeftHanded" class="options__label"><span> Горизонтальная </span></label>
+					</div>
+				</div>
+			</div>
+			<div class="form__item">
+				<label for="formMassage" class="form__label"> Сообщение: </label>
+				<textarea name="massage" id="formMassage" class="form__input"></textarea>
+			</div>
+			<div class="form__item">
+				<div class="form__label"> Возраст: </div>
+				<select name="age" class="select"> <!-- form__ -->
+					<option value=" от 18 до 25"  selected> Молодой </option>
+					<option value=" от 25 до 45"> Старый </option>
+					<option value=" от 45"> Супер старый </option>
+				</select>
+			</div>
+			<div class="form__item">
+				<div class="form__label"> Прикрепить пример фото </div>
+				<div class="file">
+					<div class="file__item">
+						<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input _req">
+						<div class="file__button"> Выбрать </div>
+					</div>
+					<div id="formPreview" class="file__preview"></div>
+				</div>
+			</div>
+			<div class="form__item">
+				<div class="checkbox">
+					<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+					<label for="formAgreement" class="checkbox__label"><span> Я даю свое согласие на обработку персональных данных в соответствии с <a href=""> Условиями </a>*</span></label>
+				</div>
+			</div>
+			<button type="submit" class="form__button"> Отправить </button>
+		</form>
+	</div>
+</section>
+<footer class="panel" id="sub">
+	<div class="h-100 d-flex justify-content-between align-items-center" style="width:80vw; margin:0 auto;">
+		<div class="footer-logo" href="#first-page"><img src="assets/img/logo.jpg" alt="logo"></div>
+		<div class="h-100 d-flex align-items-end">
+			<ul class="nav">
+				<li class="text-upper"><a href="#advantages">О нас</a></li>
+				<li class="text-upper"><a href="#catalog">Каталог</a></li>
+				<li class="text-upper"><a href="#sub">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="d-flex justify-content-evenly flex-column h-100">
+			<div class="contact">
+				<div class="item d-flex justify-content-start align-items-center mb-2">
+					<img src="assets/img/address.png" alt="address">
+					<p class="text-upper">Екатеринбург, Надеждинская, 24</p>
+				</div>
+				<div class="item d-flex justify-content-start align-items-center mb-2">
+					<img src="assets/img/phone.png" alt="phone">
+					<p class="text-upper">+7 963 033 02 00</p>
+				</div>
+			</div>
+			<div class="social mt-1">
+				<p>Я в соц. сетях:</p>
+				<div class="social-icons">
+					<img src="assets/img/social_icons/vk.png" alt="https://vk.com/read_a_lot_of_books">
+					<img src="assets/img/social_icons/instagram.png" alt="inst">
+					<img src="assets/img/social_icons/youtube.png" alt="youtube">
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a class="btn btn-primary btn-up" href="#first-page"><img src="assets/img/go_up.png" alt="go up"></a>
+	<!-- Подключаем слайдер свайпер -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Подключаем jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<!-- Подключаем файл JS скриптов -->
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/script2.js"></script>
+	<script src="assets/js/script3.js"></script>
+	<script src="assets/js/script4.js"></script>
+</body>
+</html>
